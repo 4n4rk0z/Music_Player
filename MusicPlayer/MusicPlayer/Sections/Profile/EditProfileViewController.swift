@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EditProfileViewController: UIViewController {
+class EditProfileViewController: BaseViewController {
 
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var name: UITextField!
@@ -21,7 +21,7 @@ class EditProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+ 
     }
     
     @IBAction func saveData(_ sender: Any) {
@@ -35,6 +35,7 @@ class EditProfileViewController: UIViewController {
                   pat: pt,
                   mat: mt,
                   bio: bi)
+        navigationController?.popViewController(animated: true)
     }
     
 }
