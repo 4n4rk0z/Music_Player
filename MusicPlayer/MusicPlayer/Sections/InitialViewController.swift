@@ -14,6 +14,8 @@ class InitialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setSongs()
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.fill"), style: .done, target: self, action: #selector(goToProfile))
+        
     }
     
     private  func setSongs() {
@@ -42,6 +44,62 @@ class InitialViewController: UIViewController {
                           artistName: "Sabino",
                           imageName: "Music_Placeholder",
                           trackName: "Sabino"))
+        songs.append(Song(name: "The Hand That Feed",
+                          albumName: "With Teeth",
+                          artistName: "Nien inch Nails",
+                          imageName: "NIN",
+                          trackName: "NIN"))
+        songs.append(Song(name: "The Outsider",
+                          albumName: "Emotive",
+                          artistName: "A Perfect Circle",
+                          imageName: "APC",
+                          trackName: "APC"))
+        songs.append(Song(name: "Song 3",
+                          albumName: "Unknown",
+                          artistName: "Stone Sour",
+                          imageName: "SS",
+                          trackName: "SS"))
+        songs.append(Song(name: "Dont Look Back in anger",
+                          albumName: "Unknown",
+                          artistName: "Oasis",
+                          imageName: "Oasis",
+                          trackName: "Oasis"))
+        songs.append(Song(name: "Guapa",
+                          albumName: "SabHop",
+                          artistName: "Sabino",
+                          imageName: "Music_Placeholder",
+                          trackName: "Sabino"))
+        songs.append(Song(name: "The Hand That Feed",
+                          albumName: "With Teeth",
+                          artistName: "Nien inch Nails",
+                          imageName: "NIN",
+                          trackName: "NIN"))
+        songs.append(Song(name: "The Outsider",
+                          albumName: "Emotive",
+                          artistName: "A Perfect Circle",
+                          imageName: "APC",
+                          trackName: "APC"))
+        songs.append(Song(name: "Song 3",
+                          albumName: "Unknown",
+                          artistName: "Stone Sour",
+                          imageName: "SS",
+                          trackName: "SS"))
+        songs.append(Song(name: "Dont Look Back in anger",
+                          albumName: "Unknown",
+                          artistName: "Oasis",
+                          imageName: "Oasis",
+                          trackName: "Oasis"))
+        songs.append(Song(name: "Guapa",
+                          albumName: "SabHop",
+                          artistName: "Sabino",
+                          imageName: "Music_Placeholder",
+                          trackName: "Sabino"))
+    }
+    
+    @objc func goToProfile(){
+        let sb = UIStoryboard(name: "Profile", bundle: nil)
+        let vc = sb.instantiateViewController(identifier: "ProfileVC")as! ProfileViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }
@@ -70,7 +128,6 @@ extension InitialViewController: UICollectionViewDelegate, UICollectionViewDataS
         let item = songs[indexPath.item]
         cell.imgSongImage.image = UIImage(named: item.imageName)
         cell.lblArtist.text = item.artistName
-//        cell.lblSongName.text = item.name
         return cell
     }
     
