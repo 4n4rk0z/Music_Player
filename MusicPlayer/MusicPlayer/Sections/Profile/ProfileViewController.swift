@@ -27,6 +27,12 @@ class ProfileViewController: UIViewController {
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        person = db.read()
+        initUI()
+    }
+    
     
     func initUI() {
         if person.first?.userName == "" {
