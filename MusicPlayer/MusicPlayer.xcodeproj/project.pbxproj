@@ -30,6 +30,7 @@
 		9DD45B4A25BB638A009FAE0F /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD45B4925BB638A009FAE0F /* NavController.swift */; };
 		9DD45B4E25BB6D2C009FAE0F /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD45B4D25BB6D2C009FAE0F /* DBHelper.swift */; };
 		9DD45B5125BB6E0A009FAE0F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD45B5025BB6E0A009FAE0F /* Profile.swift */; };
+		9DD45B5825BB88DE009FAE0F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD45B5725BB88DE009FAE0F /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		9DD45B4925BB638A009FAE0F /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
 		9DD45B4D25BB6D2C009FAE0F /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		9DD45B5025BB6E0A009FAE0F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		9DD45B5725BB88DE009FAE0F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				9DD45B4225BB5A8D009FAE0F /* UserDefaultsKey.swift */,
 				9DD45B4925BB638A009FAE0F /* NavController.swift */,
 				9DD45B4D25BB6D2C009FAE0F /* DBHelper.swift */,
+				9DD45B5725BB88DE009FAE0F /* BaseViewController.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				9DD45B1F25B97E27009FAE0F /* EditProfileViewController.swift in Sources */,
 				9DD45B5125BB6E0A009FAE0F /* Profile.swift in Sources */,
 				9DD45B1C25B97967009FAE0F /* ProfileViewController.swift in Sources */,
+				9DD45B5825BB88DE009FAE0F /* BaseViewController.swift in Sources */,
 				9DD45B2C25B98826009FAE0F /* HappyPath.swift in Sources */,
 				9DD45B2725B9873F009FAE0F /* InitialViewController.swift in Sources */,
 				9DD45B4025BB5A45009FAE0F /* UserDefaultsManager.swift in Sources */,
